@@ -1,0 +1,31 @@
+.layout{
+    grid-template-columns:  1fr 0.6fr 6fr 1fr;
+    grid-template-rows: 1% 1fr 1fr 1fr 1%; 
+
+    grid-template-areas: 
+    ". header header header ."
+    ". nav nav nav ."
+    ". sidebar content1 content2 ."
+    ". sidebar main main ."
+    ". footer footer footer .";
+}
+
+header{
+    background-color: hsl(27, 100%, 45%);
+    text-align: center;
+}
+
+nav{
+    font-size: xx-large;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.flex-item{
+    height: 50vh;
+}
