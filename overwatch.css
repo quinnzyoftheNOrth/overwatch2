@@ -7,6 +7,7 @@
     ". nav nav nav ."
     ". sidebar content1 content2 ."
     ". sidebar main main ."
+    ". sidebar2 main2 main2 ."
     ". footer footer footer .";
 }
 
@@ -16,16 +17,29 @@ header{
 }
 
 nav{
-    font-size: xx-large;
+    font-size: 60px;
 }
 
 main{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 
     background-color: rgb(255, 255, 255);
 }
 
-.flex-item{
+.junker_queen{
     height: 50vh;
+}
+
+.roadhog{
+    height: 50vh;
+}
+
+.junkerDiv{
+    font-size: 20px;
+}
+
+.roadhogDiv{
+    font-size: 20px;
 }
