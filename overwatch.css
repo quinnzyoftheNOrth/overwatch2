@@ -1,45 +1,36 @@
 .layout{
-    grid-template-columns:  1fr 0.6fr 6fr 1fr;
-    grid-template-rows: 1% 1fr 1fr 1fr 1%; 
+    display: grid;
+    max-height:  100vh;
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-template-rows:  1fr 0.6fr 6fr 1fr;
+    grid-template-columns: 1% 2fr 1fr 1fr 1%; 
 
     grid-template-areas: 
     ". header header header ."
     ". nav nav nav ."
     ". sidebar content1 content2 ."
-    ". sidebar main main ."
-    ". sidebar2 main2 main2 ."
     ". footer footer footer .";
 }
 
 header{
-    background-color: hsl(27, 100%, 45%);
     text-align: center;
+    grid-area: header;
+    background-color: hsl(27, 100%, 45%);
 }
 
 nav{
-    font-size: 60px;
+grid-area: nav;
 }
 
-main{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-
-    background-color: rgb(255, 255, 255);
+.navbar ul{
+    list-style: none;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3px;
+    margin: 0
 }
 
-.junker_queen{
-    height: 50vh;
+.navbar a{
+
 }
 
-.roadhog{
-    height: 50vh;
-}
 
-.junkerDiv{
-    font-size: 20px;
-}
-
-.roadhogDiv{
-    font-size: 20px;
-}
