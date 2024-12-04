@@ -22,15 +22,30 @@ nav{
 grid-area: nav;
 }
 
-.navbar ul{
-    list-style: none;
-    background-color: hsl(0, 0%, 100%);
+.bar ul{
+    list-style-type: none;
+    background-color: hsl(27, 100%, 45%);
     padding: 3px;
-    margin: 0
+    margin: 0;
+
+    overflow: hidden;
 }
 
-.navbar a{
+.bar a{
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    text-align: center;
+}
 
+.bar a:hover{
+    background-color:rgb(34, 44, 131); 
+    transition: 0.6s;
+}
+
+.bar li{
+float: left;
 }
 
 
