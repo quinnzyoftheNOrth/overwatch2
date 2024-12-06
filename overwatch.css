@@ -8,7 +8,7 @@
     grid-template-areas: 
     ". header header header ."
     ". nav nav nav ."
-    ". sidebar content1 content2 ."
+    ". aside content1 content2 ."
     ". footer footer footer .";
 }
 
@@ -16,7 +16,9 @@ header{
     text-align: center;
     grid-area: header;
     background-color: hsl(27, 100%, 45%);
+    font-size: 30px;
 }
+
 
 nav{
 grid-area: nav;
@@ -48,4 +50,25 @@ grid-area: nav;
 float: left;
 }
 
+aside{
+    grid-area: aside;
+    font-size: 40px;
 
+}
+
+main{
+    grid-area: content1;
+}
+
+
+@media (max-width:500px) {
+    .layout{
+        display: grid;
+        max-height:  100vh;
+       
+    }
+}
+
+.JunkerQueen{
+    
+}
