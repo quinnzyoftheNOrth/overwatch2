@@ -1,3 +1,4 @@
+
 .layout{
     display: grid;
     max-height:  100vh;
@@ -11,7 +12,7 @@
     ". aside content1 content2 ."
     ". footer footer footer .";
 }
-
+ 
 header{
     text-align: center;
     grid-area: header;
@@ -49,28 +50,3 @@ grid-area: nav;
 .bar li{
 float: left;
 }
-
-aside{
-    grid-area: aside;
-    font-size: 40px;
-
-}
-
-main{
-    grid-area: content1;
-}
-
-
-@media (max-width:500px) {
-    .layout{
-        display: grid;
-        max-height:  100vh;
-       
-    }
-}
-
-.witch{
-    grid-area: content;
-    width: 40vh;
-}
-
