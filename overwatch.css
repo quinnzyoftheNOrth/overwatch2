@@ -65,7 +65,15 @@ main{
     .layout{
         display: grid;
         max-height:  100vh;
-       
+        grid-template-rows:  1fr;
+        grid-template-columns: auto; 
+    
+        grid-template-areas: 
+        "header"
+        "nav"
+        "content"
+        "aside"
+        "footer";
     }
 }
 
