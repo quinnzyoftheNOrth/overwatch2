@@ -1,0 +1,102 @@
+.layout{
+    display: grid;
+    max-height:  100vh;
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-template-rows:  1fr 0.6fr 6fr 1fr;
+    grid-template-columns: 1% 1fr 1fr 1%; 
+
+    grid-template-areas: 
+    ". header header header ."
+    ". nav nav nav ."
+    ". aside main main ."
+    ". footer footer footer .";
+}
+ 
+header{
+    text-align: center;
+    grid-area: header;
+    background-color: hsl(27, 100%, 45%);
+    font-size: 30px;
+}
+
+h1{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.bar ul{
+    list-style-type: none;
+    background-color: hsl(27, 100%, 45%);
+    padding: 3px;
+    margin: 0;
+
+    overflow: hidden;
+}
+
+.bar a{
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    text-align: center;
+}
+
+.bar a:hover{
+    background-color:rgb(34, 44, 131); 
+    transition: 0.6s;
+}
+
+.bar li{
+float: left;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-right: 200px;
+}
+
+aside{
+    grid-area: aside;
+    margin: 5px;
+    padding: 5px;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+footer{
+    grid-area: footer;
+    background-color:rgb(49, 37, 119);
+}
+
+h4{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+p{
+    text-align: left;
+    margin: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+button{
+    margin-left: 20px;
+}
